@@ -43,7 +43,7 @@ class rank(Resource):
                 "rank":rank,
                 "Status":Response.status_code}
       else:
-        return Response.status_code
+        return r(Response.status_code)
 
     else:
       return r('''{acsess":"denied,
